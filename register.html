@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.">
+
+		<title>Relaxr Blog</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+			<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+			<script type="text/javascript">
+	   	(function(){
+	      emailjs.init("user_iBXbyptSnl1MWkDoaKkKL");
+	   	})();
+			</script>
+
+	 <script src="js/scripts.js"></script>
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="logo">Relaxr</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="register.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="main">
+			<div class="container">
+				<div id="email">
+					<label for="email">Email :</label>
+					<input type="text" name="email" placeholder="Enter your email" required="">
+				</div><!--- #name --->
+					<div id="name">
+						<label for="name">Name :</label>
+						<input type="text" name="name" placeholder="Enter your name" required="">
+					</div><!--- #name --->
+					<div id="password">
+						<label for="password">Password :</label>
+						<input id="password" type="password" name="password" placeholder="Enter your password" required="">
+					</div><!--- #password --->
+					<div id="confirmPassword">
+						<label for="confirmPassword">Confirm Password :</label>
+						<input id="confirmPassword" type="password" name="password" placeholder="Confirm your password" required="">
+					</div><!--- #password --->
+					<div id="selectJob">
+						<label for="jobRoles">Job Type :</label>
+						<select id="jobRoles" name="jobRoles">
+		          <option value="sales" selected>Sales</option>
+		          <option value="marketing">Marketing</option>
+		          <option value="it">I.T</option>
+		          <option value="mgmt">Management</option>
+		          <option value="adm">Admin</option>
+		          <option value="legal">Legal</option>
+		          <option value="other">Other</option>
+		        </select>
+					</div><!--- #selectJob --->
+					<div id="gender">
+						<input id="genderMale" type="radio" name="male" value="male">
+		        <label for="genderMale">Male</label>
+						<input id="genderFemale" type="radio" name="female" value="female">
+		        <label for="genderFemale">Female</label>
+					</div><!--- #gender --->
+					<div id="terms">
+						<input id="terms" type="radio" name="terms" value="terms">
+		        <label for="terms">I agree to the terms</label>
+					</div><!--- #terms --->
+				<section id="contact">
+					<input type="submit" value="Register Now!">
+				</section>
+			</div><!--- #container --->
+		</section>
+
+		<footer>
+			<h4 class="logo">Relaxr</h4>
+
+			<ul>
+				<li><a href="#"><img src="images/twitter.png" alt="Twitter logo"></a></li>
+				<li><a href="#"><img src="images/facebook.png" alt="Facebook logo"></a></li>
+			</ul>
+
+			<p class="copyright">Copyright 2015. Relaxr.</p>
+		</footer>
+	</body>
+</html>
